@@ -1,0 +1,10 @@
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success' : Like === true,
+                'list-group-item-danger' : Like === false}">
+  <div>
+    <h4 [ngStyle]="{color : getColor()}"> {{post1}} -- {{post2}} -- {{post3}}</h4>
+
+  </div>
+</li>
+<app-post-list-item *ngFor="let post of Posts" [postTitle]="Posts.title" [postContent]="Posts.contenu"
+          [postLove]="Posts.LoveIts"></app-post-list-item>

@@ -1,0 +1,8 @@
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success' : Like = true,
+                'list-group-item-danger' : Like = false 0}">
+  <div>
+    <h4 [ngStyle]="{color : getColor()}">{{postTitle}} -- {{postContent}} -- {{postLOve}}</h4>
+
+  </div>
+</li>

@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <li [ngClass]="{'list-group-item' : true; 
+                            'list-group-item-success' : 'Like === true'
+                        'list-group-item-danger': Like === false}">
+
+                <h4>{{postContenu.title}}</h4>
+                <p>{{postContenu.content}}</p>
+            </li>
+        </div>
+    </div>
+</div>
+
+
+
+<button class="btn btn-success" (click)=iLoveIt()>I Fucking Love This Shit</button>
+<button class="btn btn-success" (click)=iDontLoveIt()>I Fucking Hate This Shit</button>

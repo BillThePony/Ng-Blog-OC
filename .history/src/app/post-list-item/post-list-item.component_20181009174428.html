@@ -1,0 +1,13 @@
+<li [ngClass]="{'list-group-item' : true; 
+                            'list-group-item-success' : 'loveIts > 0'
+                        'list-group-item-danger': 'loveIts < 0'}">
+
+    <h4>{{postContenu.title}}</h4>
+    <p>{{postContenu.content}}</p>
+</li>
+ 
+
+
+
+<button class="btn btn-success" (click)=iLoveIt()>I Fucking Love This Shit</button>
+<button class="btn btn-success" (click)=iDontLoveIt()>I Fucking Hate This Shit</button>
